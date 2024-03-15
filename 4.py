@@ -14,7 +14,7 @@ class Stack: #класс стека
         return len(self.__a)
 
 a = []
-with open("answers/history_mirror.txt", "r", encoding="utf-8") as file: #открывается файл для занесения в двумерный массив
+with open("history_mirror.txt", "r", encoding="utf-8") as file: #открывается файл для занесения в двумерный массив
     q = file.readline()
     for row in file.readlines():
         a.append(row.replace("\n", "").replace("-", "").split("="))
